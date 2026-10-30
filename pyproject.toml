@@ -1,0 +1,35 @@
+[project]
+name = "vsp-final-project-2026"
+version = "0.1.0"
+description = "Environment for the VSP 2026 multimodal AI media assistant final project"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "accelerate",
+    "imageio-ffmpeg",
+    "ipykernel",
+    "jupyterlab",
+    "librosa",
+    "matplotlib",
+    "numpy",
+    "opencv-python",
+    "pandas",
+    "sentence-transformers",
+    "soundfile",
+    "torch",
+    "transformers",
+]
+
+[project.optional-dependencies]
+vision = [
+    "insightface>=1.0.1",
+    "onnxruntime",
+]
+# Not needed to run the project: tests/test_smoke.py has its own runner
+# (`python -m tests.test_smoke`). Install with `uv sync --extra dev` only
+# if you want to collect the same tests with pytest.
+dev = [
+    "pytest",
+]
+
+[tool.uv]
+package = false

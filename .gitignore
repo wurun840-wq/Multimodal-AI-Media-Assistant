@@ -1,0 +1,19 @@
+# Environment
+.venv/
+__pycache__/
+*.py[cod]
+
+# Converted audio and scratch files produced by a run
+.cache_media/
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Session notes
+.remember/
+
+# Linter cache
+.ruff_cache/
